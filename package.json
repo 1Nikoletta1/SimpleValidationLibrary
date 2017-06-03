@@ -1,0 +1,14 @@
+{
+  "name": "SimpleValidationLibrary",
+  "version": "0.0.1",
+  "author": {
+    "name": "Veronika Kuleshova",
+    "email": "vero.kuleshova@gmail.com"
+  },
+  "description": "Simple JavaScript library for validation forms",
+  "dependencies": {
+    "mocha": "3.4.2",
+    "chai": "4.0.1",
+    "jsdoc": "3.4.3"
+  }
+}

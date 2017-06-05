@@ -6,6 +6,19 @@
     "email": "vero.kuleshova@gmail.com"
   },
   "description": "Simple JavaScript library for validation forms",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1Nikoletta1/SimpleValidationLibrary.git"
+  },
+  "keywords": [
+    "validation",
+    "check password"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1Nikoletta1/SimpleValidationLibrary/issues"
+  },
+  "homepage": "https://github.com/1Nikoletta1/SimpleValidationLibrary/#readme",
   "dependencies": {
     "mocha": "3.4.2",
     "chai": "4.0.1",

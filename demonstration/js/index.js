@@ -21,17 +21,17 @@ passChecker.config('minLength', 6)
     .config('maxLength', 16)
     .config({
             'diffCase'      : true,
-            minLengthError  : 'Пароль слишком короткий',
-            maxLengthError  : 'Пароль слишком длинный',
-            alphaDigitError : 'Пароль должен содержать хотя бы одну цифру и одну букву',
-            diffCaseError   : 'Пароль должен содержать как строчные так и заглавные буквы'
+            minLengthError  : 'Пароль занадто короткий',
+            maxLengthError  : 'Пароль занадто довгий',
+            alphaDigitError : 'Пароль повинен містити хоча б одну цифру і одну букву',
+            diffCaseError   : 'Пароль повинен містити як рядкові так і великі літери'
     });
 
 easyValidate.config({
-    emailError              :'Некорректный email',
-    numError                :'Введите число',
-    comparePasswordsError   :'Пароли не совпадают',
-    stringError             : 'Поле не должно содержать цифры'
+    emailError              :'Некоректний email',
+    numError                :'Введіть число',
+    comparePasswordsError   :'Паролі не співпадають',
+    stringError             :'Поле не повинно містити цифри'
 });
 
 function addError(result, message, text) {
@@ -50,21 +50,21 @@ pass.addEventListener('keyup', function () {
     var result = passChecker.checkPass(pass.value);
     bar.style.width = 100 - result.rating * 100 + '%';
 
-    addError(result, mesPass, 'Пароль корректен');
+    addError(result, mesPass, 'Пароль коректний');
 
 });
 
 email.addEventListener('keyup', function () {
     var result = easyValidate.checkEmail(email.value);
 
-    addError(result, mesEmail, 'Email корректен');
+    addError(result, mesEmail, 'Email коректний');
 
 });
 
 secondPass.addEventListener('keyup', function () {
     var result = easyValidate.comparePasswords(pass.value, secondPass.value);
 
-    addError(result, mesSecondPass, 'Пароли совпадают');
+    addError(result, mesSecondPass, 'Паролі співпадають');
 
 });
 
